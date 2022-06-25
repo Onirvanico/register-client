@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="icon" type="icon"
+        href="./assets/aviation_vehicle_transportation_flight_travel_airplane_plane_icon_219385.png">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="app_header">
+            <h1>Cadastro do Cliente</h1>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <label for="filter">Filtrar:</label>
+            <input type="text" name="filter" id="filter" placeholder="Nome do cliente">
+            <table id="clients-table">
+                <caption>Lista de Clientes</caption>
+                <hr>
+                <thead>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Idade</th>
+                    <th>Cpf</th>
+                    <th>Rg</th>
+                </thead>
+                <tbody id="clients-body-table">
+                    <tr class="cliente">
+                        <td class="name-info">João</td>
+                        <td class="email-info">joao@email.com</td>
+                        <td class="age-info">30</td>
+                        <td class="cpf-info">1345465787</td>
+                        <td class="rg-info">36576794</td>
+                    </tr>
+                    <tr class="cliente">
+                        <td class="name-info">Ana</td>
+                        <td class="email-info">ana@email.com</td>
+                        <td class="age-info">25</td>
+                        <td class="cpf-info">3345467678</td>
+                        <td class="rg-info">245672345</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="container">
+            <h2>Cadastrar novo cliente</h2>
+            <hr>
+            <form class="app_form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" class="field" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" class="field" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" name="age" class="field">
+                </div>
+                <div class="form-group">
+                    <label for="cpf">Cpf:</label>
+                    <input type="number" id="cpf" name="cpf" class="field">
+                </div>
+                <div class="form-group">
+                    <label for="rg">Rg:</label>
+                    <input type="number" id="rg" name="rg" class="field">
+                </div>
+                <button id="register_button">Confirmar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

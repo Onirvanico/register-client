@@ -1,0 +1,131 @@
+html{
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+.app_header {
+    background-color: #e4e1e4;
+    padding: 1rem;
+    color: #FDFDFD;
+    align-items: center;
+}
+
+.app_header h1 {
+    font-family: Cambria, Cochin, Georgia, Times;
+    display: inline;
+}
+
+.app_header::before {
+    content: url("../assets/aviation_vehicle_transportation_flight_travel_airplane_plane_icon_219385.png");;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    margin-right: 1rem;
+   
+}
+
+#clients-table {
+    border: 1px solid transparent;
+    box-shadow: 0 0 1rem  black;
+}
+
+#clients-table thead th {
+    background-color: #550;
+    color: cornsilk;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#clients-table caption {
+    font-size: 3rem;
+}
+
+#clients-table tr:nth-child(2n+2) {
+    background-color: #c2c1ba50;
+}
+
+
+#clients-table tr td {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.app_form  {
+    margin-bottom: 2rem;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.form-group {
+    
+}
+
+.form-group input{
+    padding: .5rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.form-group input:focus {
+    outline: blue;
+    box-shadow: inset 0 0 5px blue;
+    
+}
+
+#name-info {
+
+}
+
+#email-info {
+
+}
+
+#age-info {
+
+}
+
+#cpf-info {
+
+}
+
+#rg-info {
+
+}
+
+#register_button {
+    background-color: #550;
+    color: whitesmoke;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#filter{
+    font-size: 1.5rem;
+    width: 45%;
+    padding: 1rem;
+}
+
+label[for="filter"] {
+    margin-top: 5rem;
+}
+
+#filter:focus {
+    outline: blue;
+    box-shadow: inset 0 0 5px blue;
+}
+
+
