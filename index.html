@@ -11,6 +11,11 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script>
+        window.onresize = () => {
+            if(window.innerWidth < 600) alert("Menos que 600px eu não quero!!");
+        }
+    </script>
 </head>
 
 <body>
@@ -21,8 +26,11 @@
     </header>
     <main>
         <section class="container">
-            <label for="filter">Filtrar:</label>
-            <input type="text" name="filter" id="filter" placeholder="Nome do cliente">
+            <div>
+                <label for="filter" style="float: left;">Filtrar:</label>
+                <input type="text"  style="float: left;" name="filter" id="filter" placeholder="Nome do cliente">
+                <button id="get_clients" style="float: right;">Trazer clientes via Ajax</button>
+            </div>
             <table id="clients-table">
                 <caption>Lista de Clientes</caption>
                 <hr>
@@ -34,14 +42,14 @@
                     <th>Rg</th>
                 </thead>
                 <tbody id="clients-body-table">
-                    <tr class="cliente">
+                    <tr class="client">
                         <td class="name-info">João</td>
                         <td class="email-info">joao@email.com</td>
                         <td class="age-info">30</td>
                         <td class="cpf-info">1345465787</td>
                         <td class="rg-info">36576794</td>
                     </tr>
-                    <tr class="cliente">
+                    <tr class="client">
                         <td class="name-info">Ana</td>
                         <td class="email-info">ana@email.com</td>
                         <td class="age-info">25</td>
